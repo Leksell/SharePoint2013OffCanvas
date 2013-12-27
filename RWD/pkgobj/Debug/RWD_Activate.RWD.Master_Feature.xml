@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Activate RWD" Description="This Feature Activates the RWD Master" Id="ef185c91-dff1-4e7f-9f87-d1b40d5fdee7" ReceiverAssembly="RWD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=86a8022842c9967b" ReceiverClass="RWD.Features.Activate.RWD.Master.ActivateRWDEventReceiver" Scope="Site">
+  <ElementManifests>
+    <ElementManifest Location="MasterPages\Elements.xml" />
+    <ElementFile Location="MasterPages\RWD.master" />
+  </ElementManifests>
+</Feature>

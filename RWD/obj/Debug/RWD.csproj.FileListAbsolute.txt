@@ -1,0 +1,4 @@
+C:\Souce\RWD\RWD\bin\Debug\RWD.dll
+C:\Souce\RWD\RWD\bin\Debug\RWD.pdb
+C:\Souce\RWD\RWD\obj\Debug\RWD.dll
+C:\Souce\RWD\RWD\obj\Debug\RWD.pdb

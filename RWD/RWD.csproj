@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7283FF1F-6C30-4C91-A491-FFE0CF6824B0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RWD</RootNamespace>
+    <AssemblyName>RWD</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlTemplates\RWD\RWDMenuIcon.ascx.cs">
+      <DependentUpon>RWDMenuIcon.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\RWD\RWDMenuIcon.ascx.designer.cs">
+      <DependentUpon>RWDMenuIcon.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Activate.RWD.Master\Activate.RWD.EventReceiver.cs">
+      <DependentUpon>Activate.RWD.Master.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ControlTemplates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c3d85e92-6204-4d83-8471-4dbb88d85771}</SharePointProjectItemId>
+    </None>
+    <None Include="FeatureElements\MasterPages\RWD.master" />
+    <None Include="FeatureElements\MasterPages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5dc35eb8-bc9b-427d-98b6-b1e180194ed1}</SharePointProjectItemId>
+    </None>
+    <None Include="FeatureElements\RWDMenuIcanElement\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fa7e7703-da13-4311-a89d-af791e016d2a}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Activate.RWD.Master\Activate.RWD.Master.feature">
+      <FeatureId>{9e8bbecc-e152-4e14-a42b-d398f32cdccb}</FeatureId>
+    </None>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f500ffc1-6198-425f-a573-1a77f1d0b594}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{920430cb-e00a-42ec-b293-9cb273ea6427}</SharePointProjectItemId>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Package\Package.package">
+      <PackageId>{0668503c-d9a2-47a4-bffb-d830f0046d50}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Layouts\RWD\Scripts\jquery-2.0.3.min.map" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="ControlTemplates\RWD\RWDMenuIcon.ascx" />
+    <Content Include="FeatureElements\MasterPages\Elements.xml" />
+    <Content Include="FeatureElements\RWDMenuIcanElement\Elements.xml" />
+    <Content Include="Features\Activate.RWD.Master\Activate.RWD.Master.Template.xml">
+      <DependentUpon>Activate.RWD.Master.feature</DependentUpon>
+    </Content>
+    <Content Include="Images\RWD\cross-24.png" />
+    <Content Include="Images\RWD\menu-24.png" />
+    <Content Include="Layouts\RWD\Scripts\RWD.Custom.js" />
+    <Content Include="Layouts\RWD\Styles\RWD.Deafult.css" />
+    <Content Include="Layouts\RWD\Scripts\jquery-2.0.3.intellisense.js" />
+    <Content Include="Layouts\RWD\Scripts\jquery-2.0.3.js" />
+    <Content Include="Layouts\RWD\Scripts\jquery-2.0.3.min.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

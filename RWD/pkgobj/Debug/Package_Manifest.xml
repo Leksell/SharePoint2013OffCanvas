@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="0668503c-d9a2-47a4-bffb-d830f0046d50" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="RWD.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Images\RWD\cross-24.png" />
+    <TemplateFile Location="Images\RWD\menu-24.png" />
+    <TemplateFile Location="Layouts\RWD\Scripts\jquery-2.0.3.min.map" />
+    <TemplateFile Location="Layouts\RWD\Scripts\RWD.Custom.js" />
+    <TemplateFile Location="Layouts\RWD\Styles\RWD.Deafult.css" />
+    <TemplateFile Location="Layouts\RWD\Scripts\jquery-2.0.3.intellisense.js" />
+    <TemplateFile Location="Layouts\RWD\Scripts\jquery-2.0.3.js" />
+    <TemplateFile Location="Layouts\RWD\Scripts\jquery-2.0.3.min.js" />
+    <TemplateFile Location="ControlTemplates\RWD\RWDMenuIcon.ascx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="RWD_Activate.RWD.Master\Feature.xml" />
+  </FeatureManifests>
+</Solution>

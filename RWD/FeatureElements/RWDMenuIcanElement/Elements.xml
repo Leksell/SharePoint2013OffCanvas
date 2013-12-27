@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <!-- SuiteBarBrandingDelegate (the top-left "SharePoint" text on a page) -->
+  <Control ControlSrc="/_controltemplates/15/RWD/RWDMenuIcon.ascx"
+           Id="SuiteBarBrandingDelegate"
+           Sequence="9" />
+
+</Elements>
+
+

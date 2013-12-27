@@ -1,0 +1,137 @@
+﻿
+
+/*Off Canvas*/
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+#oc-page {
+  background: #fafafa;
+}
+
+#content {
+  clear: both;
+  padding-top: 1em;
+}
+
+nav a {
+  color: #fff;
+}
+
+/*hides open button/text*/
+a.open-panel, a.close-panel {
+  display: none;
+}
+
+/*  you can set the width you like here, when the browser go under that width the off canvas will activate/show.   */
+@media only screen and (max-width: 850px) {
+  
+  #content {
+    padding-top: 0;
+  }
+  
+ /* Move nav off screen, setup transitions */
+ nav {
+    width: 70%;
+    position: absolute;
+    left: -70%;
+    top: 0;
+    height: 100%;
+    background: #777;
+  }
+  
+  /* Display nav items vertically */
+  ul.menu {
+    border-top: 1px solid #888;
+    
+    li {
+      float: none;
+      width: 100%;
+      text-align: left;
+      padding: .5em 1em;
+      box-sizing: border-box;
+      border-bottom: 1px solid #888;
+    }
+  }
+  
+  /* Reveal open/close buttons */
+  a.open-panel, a.close-panel {
+    display: inline;
+  }
+  
+  .close-panel {
+    position: relative;
+    top: .5em;
+    left: 1em;
+  }
+
+  .openNav #oc-page {
+    left: 0;
+    -webkit-transform: translate3d(70%, 0, 0);
+    -moz-transform: translate3d(70%, 0, 0);
+    -ms-transform: translate3d(70%, 0, 0);
+    -o-transform: translate3d(70%, 0, 0);
+    transform: translate3d(70%, 0, 0);
+    -webkit-transition: -webkit-transform 500ms ease;
+    -moz-transition: -moz-transform 500ms ease;
+    -o-transition: -o-transform 500ms ease;
+    transition: transform 500ms ease;
+  }
+  
+  /* When the panel is closed, transition the page back to the left */
+  #oc-page {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 500ms ease;
+    -moz-transition: -moz-transform 500ms ease;
+    -o-transition: -o-transform 500ms ease;
+    transition: transform 500ms ease;
+  }
+
+
+  /* A fast menu modification*/
+.ms-displayInline {
+    display: block!important;
+}
+
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected, .ms-tv-selected:link {
+    color: #fff;
+    }
+    .ms-core-listMenu-item, .ms-core-listMenu-item:link, .ms-core-listMenu-item:visited, .ms-tv-item:link, .ms-tv-item:visited, .ms-tv-header:link, .ms-tv-header:visited {
+    color: #fff;
+}
+.ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:hover, .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item.ms-core-listMenu-selected:hover, a.ms-tv-item:hover, a.ms-tv-header:hover {
+    color: #ccc;
+}
+.ms-core-listMenu-horizontalBox li
+    {
+    display: block!important;
+}
+.ms-core-listMenu-horizontalBox {
+    margin: 20px 0px 0px 0px;
+}
+.ms-core-listMenu-horizontalBox ul {padding: 0px 0px 0px 5px;}
+ul.dynamic {
+    position:static!important;
+    background-color: transparent;
+    white-space: normal;
+    word-wrap: break-word;
+    padding: 0px 0px 0px 20px;
+    border: none;
+    box-shadow: none;
+    
+     }
+.ms-core-listMenu-horizontalBox .dynamic-children.additional-background {
+    padding-right: 0px;
+    background-image: none;
+    cursor: pointer;
+    
+}
+
+}

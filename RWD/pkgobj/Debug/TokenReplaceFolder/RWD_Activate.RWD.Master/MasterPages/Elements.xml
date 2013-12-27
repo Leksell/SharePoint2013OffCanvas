@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="MasterPages" Path="MasterPages" RootWebOnly="TRUE" Url="_catalogs/masterpage">
+    <File Url="RWD.master" Type="GhostableInLibrary" IgnoreIfAlreadyExists="TRUE" >
+    </File>
+  </Module>
+</Elements>
